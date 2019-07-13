@@ -1,0 +1,22 @@
+{
+  "name": "starter",
+  "version": "2.0.0",
+  "description": "Gulp padrão para desenvolvimento",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "author": "Leandro Mateus",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-consolidate": "^0.2.0",
+    "gulp-iconfont": "^10.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.1",
+    "gulp-webp": "^4.0.1",
+    "underscore": "^1.9.1"
+  }
+}
