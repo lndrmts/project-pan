@@ -22,9 +22,9 @@ const iconsTargetPath = 'assets/fonts';
 function scripts() {
   return src(
         [
-            `${scriptsSourcePath}/vendor/jquery/jquery-3.3.1.js`,
-            //`${scriptsSourcePath}/vendor/jquery/jquery.fancybox.js`,
-            //`${scriptsSourcePath}/vendor/slick-1.8.1/slick.js`,
+            `${scriptsSourcePath}/vendor/jquery/jquery-3.4.1.js`,
+            `${scriptsSourcePath}/vendor/jquery/jquery.fancybox.min.js`,
+            `${scriptsSourcePath}/vendor/slick-1.8.1/slick.js`,
 
             // Bootstrap
             //`${scriptsSourcePath}/vendor/bootstrap-4.3.1/bootstrap.js`,
@@ -39,7 +39,7 @@ function scripts() {
 }
 
 function images() {
-  return src(`${imagesTargetPath}/*.{jpg,png}`)
+  return src(`${imagesTargetPath}/**/*.{jpg,png}`)
         .pipe(webp())
         .pipe(gulp.dest(imagesTargetPath))
 }
@@ -56,7 +56,7 @@ function css() {
         .pipe(gulp.dest(stylesTargetPath));
 }
 
-    
+
 
 function icons() {
    return src(`${iconsSourcePath}/*.svg`)
@@ -87,7 +87,7 @@ exports.scripts = scripts;
 exports.icons = icons;
 exports.default = parallel(css, scripts);
 
-watch(`${stylesSourcePath}/*.scss`, css);
-watch(`${scriptsSourcePath}/*.js`, scripts);
-watch(`${imagesTargetPath}/*.{jpg,png}`, images);
+watch(`${stylesSourcePath}/**/*.scss`, css);
+watch(`${scriptsSourcePath}/**/*.js`, scripts);
+watch(`${imagesTargetPath}/**/*.{jpg,png}`, images);
 watch(`${iconsSourcePath}/*.svg`, icons);

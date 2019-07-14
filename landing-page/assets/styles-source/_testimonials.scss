@@ -1,0 +1,20 @@
+.testimonials {
+	padding: 100px 0;
+	&__container {
+		max-width: 945px;
+		margin: auto;
+		text-align: center;
+	}
+	&--item {
+		@include font-std(18px, $colorGrey, 400, $fontSecondary);
+		text-align: center;
+		line-height: 1.667;
+	}
+	&--author {
+		@include font-std(20px, $colorBlack, 700, $fontSecondary);
+		margin-top: 25px;
+	}
+	&--company {
+		@include font-std(15px, $colorBlue, 400, $fontSecondary);
+	}
+}

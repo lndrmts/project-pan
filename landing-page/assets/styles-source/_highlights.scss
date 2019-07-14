@@ -1,0 +1,49 @@
+.highlights {
+		@media(min-width: 769px) {
+		padding: 100px 0;
+	}
+	&__container {
+		@extend %container;
+	}
+	&--title {
+		@include font-std(40px, $colorBlack, 300, $fontPrimary);
+		text-align: center;
+		margin-bottom: 65px;
+	}
+	&__contents {
+		@media(min-width: 769px) {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 60px;
+		}
+		@media(max-width: 768px) {
+			text-align: center;
+		}
+	}
+	&__item {
+		@media(max-width: 768px) {
+			margin-bottom: 60px;
+		}
+		&--title {
+			@include font-std(22px, $colorBlack, 400, $fontSecondary);
+			text-transform: uppercase;
+			display: flex;
+			justify-content: center;
+			.icon {
+				color: $colorBlack;
+				padding-right: 25px;
+				margin-left: -25px;
+			}
+		}
+		&--description {
+			@include font-std(18px, $colorGrey, 400, $fontSecondary);
+			line-height: 1.944;
+		}
+		&--link {
+			color: $colorBlue;
+			&:hover {
+				color: $colorBlack;
+			}
+		}
+	}
+}

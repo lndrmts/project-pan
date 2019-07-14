@@ -1,0 +1,34 @@
+.footer {
+	&__container {
+		@extend %container;
+		display: flex;
+		justify-content: space-between;
+		border-top: 1px solid $colorBlue;
+		padding: 35px 0;
+		align-items: center;
+		@media(max-width: 768px) {
+			flex-direction: column-reverse;
+			padding: 35px 15px;
+			text-align: center;
+		}
+	}
+	&__socials {
+		display: grid;
+		grid-gap: 15px;
+		grid-template-columns: repeat(4, 1fr);
+		&--link {
+			width: 40px;
+			height: 40px;
+			background-color: $colorBlue;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: $colorWhite;
+			font-size: 14px;
+			border-radius: 100px;
+			&:hover {
+				background-color: $colorGrey;
+			}
+		}
+	}
+}

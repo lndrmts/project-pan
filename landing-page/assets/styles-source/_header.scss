@@ -1,0 +1,89 @@
+.header {
+	background-image: url(../images/circlebg.png), linear-gradient( -30deg, rgb(115,255,253) 0%, rgb(39,146,236) 100%);
+	background-image: url(../images/circlebg.png), -moz-linear-gradient( -30deg, rgb(115,255,253) 0%, rgb(39,146,236) 100%);
+	background-image: url(../images/circlebg.png), -webkit-linear-gradient( -30deg, rgb(115,255,253) 0%, rgb(39,146,236) 100%);
+	background-image: url(../images/circlebg.png), -ms-linear-gradient( -30deg, rgb(115,255,253) 0%, rgb(39,146,236) 100%);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	@media(min-width: 769px) {
+		height: 100vh;
+	}
+	&__container {
+		@extend %container;
+	}
+	&__grid {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 166px;
+		@media(max-width: 768px) {
+			height: 110px;
+		}
+	}
+	&__webdoor {
+		display: flex;
+		@media(max-width: 768px) {
+			flex-direction: column;
+		}
+		&--title {
+			@include font-std(100px, $colorWhite, 600, $fontSpecial);
+			margin-bottom: 0;
+			@media(max-width: 1366px) {
+				font-size: 70px;
+				margin-top: 0;
+			}
+			@media(max-width: 768px) {
+				font-size: 40px;
+			}
+		}
+		&--description {
+			@include font-std(26px, $colorWhite, normal, $fontSecondary);
+			margin-bottom: 65px;
+			@media(max-width: 768px) {
+				font-size: 21px;
+			}
+		}
+		&--image {
+			@media(max-width: 1600px) {
+				max-width: 100%;
+			}
+			/*max-width: 100%;*/
+		}
+		&--item {
+			flex: 0 0 50%;
+		}
+	}
+}
+.navigation {
+	@media(max-width: 768px) {
+		display: none;
+	}
+	&--link {
+		@include font-std(20px, $colorWhite, 600, $fontPrimary);
+		text-transform: uppercase;
+		padding-left: 30px;
+		&:hover {
+			color: $colorBlack;
+			transition: color 0.5s linear 0s;
+		}
+		@media(max-width: 768px) {
+			padding: 8px 0;
+		}
+	}
+	&--mobile {
+		position: fixed;
+	    background-image: linear-gradient(-30deg, #73fffd 0%, #2792ec 100%);
+	    left: 0;
+	    right: 0;
+	    flex-direction: column;
+	    top: 0;
+	    padding: 35px;
+	    height: 100vh;
+	    display: flex;
+	}
+}
+#closeNavigation {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}

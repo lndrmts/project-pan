@@ -1,0 +1,28 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	font-size: 18px;
+	font-family: $fontPrimary;
+}
+a, a:visited, a:active, a:hover {
+	text-decoration: none;
+}
+blockquote {
+	margin: 0;
+	footer {
+		margin-bottom: 25px;
+	}
+}
+.img-responsive {
+	max-width: 100%;
+}
+.hidden {
+	display: none;
+}
+@media(min-width: 769px) {
+	.only-mobile {
+		display: none;
+	}
+}

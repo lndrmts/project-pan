@@ -1,0 +1,61 @@
+.greatapp {
+	background-color: $colorGreyLight;
+	padding: 80px 0;
+	&__container {
+		@extend %container;
+	}
+	&__content {
+		@media(min-width: 769px) {
+			display: flex;
+		}
+		&--title {
+		@include font-std(35px, $colorBlack, 300, $fontPrimary);
+			span {
+				font-weight: 400;
+			}
+		}
+		&--description {
+			@include font-std(18px, $colorGrey, 400, $fontSecondary);
+			line-height: 1.944;
+			margin-bottom: 45px;
+		}
+		&--item {
+			flex: 0 0 50%;
+		}
+		&--link {
+			@include font-std(18px, $colorGrey, 400, $fontSecondary);
+			text-transform: uppercase;
+			flex: 0 33%;
+			@media(max-width: 768px) {
+				flex: 0 0 50%;
+			}
+			.icon {
+				color: $colorBlack;
+				background-color: $colorWhite;
+				border-radius: 100px;
+				height: 110px;
+				width: 110px;
+				display: flex;
+				align-items: center;
+				font-size: 28px;
+				justify-content: center;
+				margin: 0 auto 18px;
+			}
+			&:hover {
+				color: $colorBlue;
+				.icon {
+					color: $colorBlue;
+				}
+			}
+		}
+	}
+	&__icons {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		text-align: center;
+		@media(max-width: 768px) {
+			margin-top: 35px;
+		}
+	}
+}

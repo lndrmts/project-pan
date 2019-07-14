@@ -1,0 +1,40 @@
+.app {
+	padding: 100px 0;
+	@media(max-width: 768px) {
+		padding: 50px 0;
+	}
+	&__container {
+		@extend %container;
+	}
+	&__grid {
+		@media(min-width: 768px) {
+			display: flex;
+		}
+		&--item {
+			flex: 1 0 50%;
+		}
+	}
+	&--title {
+		@include font-std(30px, $colorBlack, 300, $fontPrimary);
+		strong {
+			font-weight: 400;
+		}
+	}
+	&--description {
+		@include font-std(18px, $colorGrey, 400, $fontSecondary);
+		margin: 45px 0;
+	}
+	&--images {
+		margin-top: 25px;
+		@media(max-width: 768px) {
+			display: flex;
+		}
+		@media(min-width: 769px) {
+			img {
+				&:last-child {
+					margin-left: 15px;
+				}
+			}
+		}
+	}
+}

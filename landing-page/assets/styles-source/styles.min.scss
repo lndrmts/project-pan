@@ -12,8 +12,21 @@
 @import "variables";
 @import "mixins";
 @import "iconfont";
+@import "classes";
+@import "button";
 
 // General
 @import "base";
 @import "footer";
 @import "header";
+
+// Sections
+@import "highlights";
+@import "app";
+@import "solution";
+@import "video";
+@import "greatapp";
+@import "counters";
+@import "testimonials";
+@import "blog";
+@import "subscribe";

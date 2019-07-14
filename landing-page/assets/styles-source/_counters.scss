@@ -1,0 +1,33 @@
+.counters {
+	padding: 80px 0;
+ 	background-image: -moz-linear-gradient( -59deg, rgb(87,233,250) 0%, rgb(37,154,239) 100%);
+  background-image: -webkit-linear-gradient( -59deg, rgb(87,233,250) 0%, rgb(37,154,239) 100%);
+  background-image: -ms-linear-gradient( -59deg, rgb(87,233,250) 0%, rgb(37,154,239) 100%);
+	&__container {
+		@extend %container;
+		display: flex;
+		justify-content: space-around;
+		@media(max-width: 768px) {
+			flex-wrap: wrap;
+		}
+	}
+	&--item {
+		width: 172px;
+		height: 172px;
+		border: 1px solid $colorWhite;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		text-transform: uppercase;
+		justify-content: center;
+		@include font-std(15px, $colorWhite, 400, $fontSecondary);
+		strong {
+			font-weight: 700;
+			font-size: 20px;
+		}
+	}
+	&__count {
+			@include font-std(50px, $colorWhite, 700, $fontSecondary);
+			margin-bottom: 8px;
+	}
+}

@@ -5,11 +5,11 @@ iconfont Webfont
 @font-face {
  font-family: "iconfont";
 
- src: url('../fonts/iconfont.eot?1551370891243');
- src: url('../fonts/iconfont.eot?#iefix-1551370891243') format('embedded-opentype'),
-  url('../fonts/iconfont.woff2?1551370891243') format('woff2'),
-  url('../fonts/iconfont.woff?1551370891243') format('woff'),
-  url('../fonts/iconfont.ttf?1551370891243') format('truetype');
+ src: url('../fonts/iconfont.eot?1563142735746');
+ src: url('../fonts/iconfont.eot?#iefix-1563142735746') format('embedded-opentype'),
+  url('../fonts/iconfont.woff2?1563142735746') format('woff2'),
+  url('../fonts/iconfont.woff?1563142735746') format('woff'),
+  url('../fonts/iconfont.ttf?1563142735746') format('truetype');
  font-weight: normal;
  font-style: normal;
 }
@@ -35,6 +35,78 @@ iconfont Webfont
 Glyphs list
 */
 
-.icon-elevador:before {
+.icon-backups:before {
  content: '\ea01';
-}
+}
+
+.icon-calendar:before {
+ content: '\ea02';
+}
+
+.icon-close:before {
+ content: '\ea03';
+}
+
+.icon-connect:before {
+ content: '\ea04';
+}
+
+.icon-facebook:before {
+ content: '\ea05';
+}
+
+.icon-googleplus:before {
+ content: '\ea06';
+}
+
+.icon-heart:before {
+ content: '\ea07';
+}
+
+.icon-icloud:before {
+ content: '\ea08';
+}
+
+.icon-locations:before {
+ content: '\ea09';
+}
+
+.icon-maps:before {
+ content: '\ea0a';
+}
+
+.icon-menu:before {
+ content: '\ea0b';
+}
+
+.icon-musics:before {
+ content: '\ea0c';
+}
+
+.icon-notify:before {
+ content: '\ea0d';
+}
+
+.icon-photos:before {
+ content: '\ea0e';
+}
+
+.icon-reminders:before {
+ content: '\ea0f';
+}
+
+.icon-share:before {
+ content: '\ea10';
+}
+
+.icon-twitter:before {
+ content: '\ea11';
+}
+
+.icon-voice:before {
+ content: '\ea12';
+}
+
+.icon-youtube:before {
+ content: '\ea13';
+}

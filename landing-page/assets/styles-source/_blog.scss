@@ -1,0 +1,47 @@
+.blog {
+	padding: 100px 0;
+	background-color: #e8e8e8;
+	@media(max-width: 768px) {
+		padding: 50px 0;
+	}
+	&__container {
+		@extend %container;
+		@media(max-width: 768px) {
+			text-align: center;
+		}
+	}
+	&--title {
+		@include font-std(40px, $colorBlack, 300, $fontPrimary);
+		text-align: center;
+		margin-bottom: 65px;
+		span {
+			font-weight: 400;
+		}
+	}
+	&__posts {
+		@media(min-width: 769px) {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 45px;
+		}
+		article {
+			@media(max-width: 768px) {
+				margin-bottom: 60px;
+			}
+		}
+		&--title {
+			@include font-std(25px, $colorBlack, 300, $fontPrimary);
+		}
+		&--excerpt {
+			@include font-std(18px, $colorGrey, 300, $fontSecondary);
+			line-height: 1.4;
+		}
+		&--permalink {
+			color: $colorBlue;
+			margin-top: 25px;
+			&:hover {
+				color: $colorBlack;
+			}
+		}
+	}
+}
