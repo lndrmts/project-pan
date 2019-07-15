@@ -19,6 +19,8 @@
 
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
 
+    <link rel="manifest" href="/manifest.json">
+
     <meta property="og:type" content="website" />
     <meta property="og:title" content="<?= $title;?>" />
     <meta property="og:description" content="<?= $description;?>" />
