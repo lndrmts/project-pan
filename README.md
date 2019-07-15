@@ -41,5 +41,6 @@ Estamos usando imagens padrão mais atual que é o formato `.webp` portanto toda
 
 ```
 
-## Demo
-https://bancopan.lndrmts.com
+## Observações
+**Link para o projeto** https://bancopan.lndrmts.com
+**Esta sendo utilizado para o projeto os recursos de PWA e Service Worker**
