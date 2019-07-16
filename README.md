@@ -41,10 +41,23 @@ Estamos usando imagens padrão mais atual que é o formato `.webp` portanto toda
 
 ```
 
-## Observações
-**Link para o projeto** 
+## Observações Landing Page e E-mail
+**Link para a landing Page** 
+```
+
 https://bancopan.lndrmts.com
 
+```
 **PWA / Service Worker**
 Este projeto conta com os recursos de PWA e Service Worker
 
+**Link para o e-mail** 
+```
+
+https://bancopan.lndrmts.com/e-mail/
+https://bancopan.lndrmts.com/e-mail/index-compiled.html
+https://bancopan.lndrmts.com/e-mail/index-compress.html
+
+```
+
+*O E-mail foi desenvolvido com base no Framework [Zurb Foundation](https://foundation.zurb.com/emails.html)*
